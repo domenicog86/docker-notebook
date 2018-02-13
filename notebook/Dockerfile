@@ -7,6 +7,8 @@ WORKDIR /notebooks
 
 EXPOSE 8888
 
+pip install bokeh
+
 ADD notebook.sh /
 
 CMD ["/notebook.sh"]
