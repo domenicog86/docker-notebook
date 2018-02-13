@@ -7,6 +7,7 @@ WORKDIR /notebooks
 
 EXPOSE 8888
 
+RUN pip install --upgrade pip
 RUN pip install bokeh
 
 ADD notebook.sh /
